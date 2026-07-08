@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  MEMBER
+  VISITOR
+}
+
+enum ProjectStatus {
+  IDEE
+  EN_COURS
+  TERMINE
+  SUSPENDU
+}
+
+model User {
+  id            String          @id @default(cuid())
+  email         String          @unique
+  password      String
+  name          String?
+  role          Role            @default(VISITOR)
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  registrations Registration[]
+  projects      Project[]       @relation("ProjectCreator")
+}
+
+model Project {
+  id          String        @id @default(cuid())
+  title       String
+  description String
+  status      ProjectStatus @default(IDEE)
+  team        String[]      @default([])
+  imageUrl    String?
+  createdBy   User?         @relation("ProjectCreator", fields: [createdById], references: [id])
+  createdById String?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model Event {
+  id            String          @id @default(cuid())
+  title         String
+  date          DateTime
+  location      String
+  description   String
+  capacity      Int             @default(50)
+  registrations Registration[]
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+}
+
+model Registration {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  event     Event    @relation(fields: [eventId], references: [id])
+  eventId   String
+  createdAt DateTime @default(now())
+
+  @@unique([userId, eventId])
+}
