@@ -4,263 +4,65 @@
   <img src="https://img.shields.io/badge/Project-TUNSA%20Platform-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" />
 </p>
 
 ## 🌍 Overview
 
-**TUNSA Platform** is a modern digital platform designed to support and enhance the activities of the **Tunisian Space Association (TUNSA)** by providing an organized, scalable, and user-friendly environment for managing projects, collaboration, communication, and technological initiatives related to space engineering.
+**TUNSA Platform** is a modern digital ecosystem designed to support and enhance the activities of the **Tunisian Space Association (TUNSA)**. It provides an organized, scalable, and user-friendly environment for managing projects, cross-functional collaboration, internal communication, and space-engineering initiatives.
 
-The platform aims to connect students, engineers, researchers, and space enthusiasts through an innovative ecosystem that facilitates collaboration, knowledge sharing, and project management.
+The platform connects students, engineers, researchers, and space enthusiasts to foster knowledge sharing, open-source contribution, and streamlined project management.
 
 ---
 
 # 🎯 Objectives
 
-The main goals of TUNSA Platform are:
-
-- 🚀 Create a centralized platform for TUNSA activities.
-- 👥 Improve collaboration between members and project teams.
-- 📚 Facilitate knowledge sharing and documentation.
-- 🛰️ Support space-related educational and engineering projects.
-- 🌐 Provide a scalable solution for future developments.
+- 🚀 **Centralized Hub**: Serve as the central digital workspace for all TUNSA activities.
+- 👥 **Enhanced Collaboration**: Bridge communication gaps between members and project teams.
+- 📚 **Knowledge Management**: Facilitate technical documentation and resource sharing.
+- 🛰️ **Project Incubation**: Support educational, research, and space-related engineering projects.
+- 🌐 **Scalability**: Build a robust, modular architecture ready for future growth.
 
 ---
 
 # ✨ Features
 
 ## 👤 User Management
-
-- Secure authentication system.
-- User profiles.
-- Role-based access control.
-- Member management.
+* Secure authentication system (JWT / NextAuth).
+* Customizable member profiles.
+* Role-based access control (RBAC) for admins, leads, and members.
 
 ## 🚀 Project Management
+* Lifecycle tracking for technical and research projects.
+* Team member assignment and workload tracking.
+* Integrated file and documentation management.
 
-- Create and manage technical projects.
-- Assign team members.
-- Track project progress.
-- Organize project documentation.
+## 💬 Collaboration & Workspace
+* Real-time communication channels between members.
+* Shared resource repositories.
 
-## 💬 Collaboration
-
-- Communication between members.
-- Team workspace.
-- Resource sharing.
-
-## 📊 Dashboard
-
-- Interactive dashboard.
-- Activity monitoring.
-- Project statistics.
+## 📊 Analytics Dashboard
+* Interactive overview of active projects and membership statistics.
+* Activity monitoring and performance metrics.
 
 ---
 
 # 🏗️ System Architecture
 
-The platform follows a modular architecture to ensure:
+The platform follows a modular full-stack architecture optimized for maintainability and performance:
 
-- Scalability
-- Maintainability
-- Security
-- Performance
-
-```
+```text
 TUNSA Platform
-
-├── Frontend
-│   ├── User Interface
-│   ├── Components
-│   └── Client-side Logic
-│
-├── Backend
-│   ├── REST API
-│   ├── Authentication
-│   ├── Business Logic
-│   └── Database Management
-│
-└── Database
-    ├── Users
-    ├── Projects
-    └── Resources
-```
-
----
-
-# 🛠️ Technologies
-
-## Frontend
-
-- React / Angular / Flutter *(adapt according to your project)*
-- HTML5
-- CSS3
-- JavaScript / TypeScript
-
-## Backend
-
-- Node.js / Spring Boot / Django *(adapt according to your project)*
-- REST API architecture
-
-## Database
-
-- PostgreSQL / MySQL / MongoDB
-
-## Development Tools
-
-- Git & GitHub
-- Docker
-- Postman
-- VS Code
-
----
-
-# ⚙️ Installation & Setup
-
-## 1. Clone the repository
-
-```bash
-git clone https://github.com/fz-hazem/Tunsa-Platform.git
-```
-
-## 2. Navigate to the project directory
-
-```bash
-cd Tunsa-Platform
-```
-
-## 3. Install dependencies
-
-Frontend:
-
-```bash
-npm install
-```
-
-Backend:
-
-```bash
-npm install
-```
-
-*(Modify according to your technology stack)*
-
-## 4. Configure environment variables
-
-Create a `.env` file:
-
-```env
-DATABASE_URL=
-API_KEY=
-PORT=
-```
-
-## 5. Run the application
-
-Development mode:
-
-```bash
-npm run dev
-```
-
----
-
-# 📂 Project Structure
-
-```
-Tunsa-Platform/
-
-├── frontend/
-│
-├── backend/
-│
-├── database/
-│
-├── documentation/
-│
-├── README.md
-│
-└── .gitignore
-```
-
----
-
-# 🔐 Security
-
-The platform integrates security best practices:
-
-- Authentication and authorization.
-- Protected API endpoints.
-- Secure data management.
-- Input validation.
-- Environment variable protection.
-
----
-
-# 🚀 Future Improvements
-
-Future versions may include:
-
-- 🤖 AI-powered assistance for project management.
-- 🛰️ Space mission tracking module.
-- 📱 Mobile application.
-- 📈 Advanced analytics dashboard.
-- 🔔 Real-time notifications.
-- ☁️ Cloud deployment.
-
----
-
-# 🤝 Contribution
-
-Contributions are welcome!
-
-To contribute:
-
-1. Fork the repository.
-2. Create a new branch:
-
-```bash
-git checkout -b feature/new-feature
-```
-
-3. Commit your changes:
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push your branch:
-
-```bash
-git push origin feature/new-feature
-```
-
-5. Create a Pull Request.
-
----
-
-# 👨‍💻 Team
-
-Developed by:
-
-**Hazem Fezai**
-
-Engineering Student  
-Sup'Com - Tunisia
-
----
-
-# 📞 Contact
-
-For questions, suggestions, or collaboration:
-
-GitHub Repository:
-
-https://github.com/fz-hazem/Tunsa-Platform
-
----
-
-# ⭐ Support
-
-If you find this project interesting, consider giving it a ⭐ on GitHub.
-
-Together, we build the future of space technology in Tunisia 🚀🇹🇳
+├── Frontend (Next.js / React)
+│   ├── User Interface & App Router
+│   ├── Component Library
+│   └── Client-side State & Logic
+├── Backend / API Layer
+│   ├── Server Actions / REST API Endpoints
+│   ├── Authentication Middleware
+│   └── Business Logic Handlers
+└── Database Layer (Prisma ORM)
+    ├── Users & Roles Schema
+    ├── Projects & Tasks Relations
+    └── Shared Resources
